@@ -3,93 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>فروشگاه اینترنتی ۱۹کالا</title>
+    <title>سفره‌خانه سنتی</title>
     <link rel="stylesheet" href="style.css">
-    <!-- فراخوانی فونت وزیرمتن -->
+    <!-- فونت وزیرمتن -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
-    <!-- فراخوانی آیکون‌ها (FontAwesome) برای زیبایی بیشتر -->
+    <!-- آیکون‌ها -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- هدر سایت -->
+
+    <!-- هدر بالای سایت -->
     <header class="site-header">
         <div class="container header-inner">
+            
+            <!-- سمت راست: لوگو -->
             <div class="logo">
-                <!-- لینک لوگو -->
-                <img src="https://cdn.iconscout.com/icon/free/png-256/free-19-icon-download-in-svg-png-gif-file-formats--number-nineteen-counting-pack-signs-icons-1502476.png" alt="۱۹کالا" style="width: 50px; height: 50px; filter: brightness(0) invert(1);">
+                <img src="https://cdn-icons-png.flaticon.com/512/3448/3448609.png" alt="لوگو سفره‌خانه" style="width: 80px;">
             </div>
+
+            <!-- وسط: منوها -->
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#">گوشی موبایل</a></li>
-                    <li><a href="#">اسپیکر</a></li>
-                    <li><a href="#">هدفون و هندزفری</a></li>
-                    <li><a href="#">تیلت</a></li>
-                    <li><a href="#">ساعت هوشمند</a></li>
+                    <li><a href="#" class="active">صفحه نخست</a></li>
+                    <li><a href="#">شعب ما</a></li>
+                    <li><a href="#">همکاری با ما <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">منوی رستوران <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <li><a href="#">درباره‌ی ما</a></li>
                 </ul>
             </nav>
-            <div class="header-icons">
-                <!-- آیکون‌ها -->
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-regular fa-user"></i>
+
+            <!-- سمت چپ: دکمه‌ها و شماره تماس -->
+            <div class="header-actions">
+                <div class="phone-box">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>۰۲۱-۶۸۳۳۴</span>
+                </div>
+                <button class="order-btn">
+                    سفارش آنلاین <i class="fa-solid fa-utensils"></i>
+                </button>
             </div>
         </div>
     </header>
 
-    <!-- بنر اصلی -->
+    <!-- بنر اصلی (اسلایدر) -->
     <section class="hero-banner container">
-        <!-- لینک بنر پاییزی -->
-        <img src="https://images.unsplash.com/photo-1507371341162-763b5e419408?q=80&w=1200&auto=format&fit=crop" alt="تخفیف پاییزه" style="height: 400px; object-fit: cover;">
-    </section>
-
-    <!-- نوار خدمات -->
-    <section class="services container">
-        <div class="service-item"><i class="fa-solid fa-gift" style="color: #e53e3e; margin-left: 5px;"></i> ضمانت اصالت</div>
-        <div class="service-item"><i class="fa-solid fa-truck-fast" style="color: #3182ce; margin-left: 5px;"></i> ارسال اکسپرس</div>
-        <div class="service-item"><i class="fa-solid fa-calendar-check" style="color: #38a169; margin-left: 5px;"></i> ۷ روز ضمانت</div>
-        <div class="service-item"><i class="fa-solid fa-magnifying-glass" style="color: #d69e2e; margin-left: 5px;"></i> رجیستری</div>
-    </section>
-
-    <!-- مجله ۱۹کالا -->
-    <section class="magazine container">
-        <div class="magazine-box">
-            <h3>مجله تخصصی ۱۹کالا</h3>
-            <button>مشاهده مقالات</button>
+        <div class="banner-wrapper">
+            <!-- فلش‌های چپ و راست -->
+            <button class="arrow-btn right"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="arrow-btn left"><i class="fa-solid fa-chevron-left"></i></button>
+            
+            <!-- عکس بنر (فعلاً یک عکس تستی با تم قرمز و غذا) -->
+            <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?q=80&w=1200&auto=format&fit=crop" alt="سفره‌خانه سنتی">
+            
+            <!-- متن‌های روی بنر -->
+            <div class="banner-text top-right">
+                <h3>توتون‌خانه‌ی روحی</h3>
+                <p>منتظرتونیم</p>
+            </div>
+            <div class="banner-text bottom-left">
+                <h3>به بهونه‌ی شنیدن صداتون</h3>
+                <p>یه سفره‌ی اپونی بهت کردیم!</p>
+                <span class="date">از ۳ تا ۸ آبان</span>
+            </div>
+            <div class="banner-badge">سفارش با عشق</div>
         </div>
     </section>
 
-    <!-- محصولات -->
-    <section class="products container">
-        <h2>تخفیف ویژه</h2>
-        <div class="product-grid">
-            <!-- کارت محصول ۱ -->
-            <div class="product-card">
-                <!-- لینک عکس گوشی ۱ -->
-                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=300&auto=format&fit=crop" alt="گوشی">
-                <h3>گوشی سامسونگ گلکسی Z Flip</h3>
-                <p style="color: #e53e3e; font-weight: bold;">۲۵,۰۰۰,۰۰۰ تومان</p>
-            </div>
-            <!-- کارت محصول ۲ -->
-            <div class="product-card">
-                <!-- لینک عکس گوشی ۲ -->
-                <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=300&auto=format&fit=crop" alt="گوشی">
-                <h3>گوشی سامسونگ گلکسی S24</h3>
-                <p style="color: #e53e3e; font-weight: bold;">۴۵,۰۰۰,۰۰۰ تومان</p>
-            </div>
-            <!-- کارت محصول ۳ -->
-            <div class="product-card">
-                <!-- لینک عکس گوشی ۳ -->
-                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=300&auto=format&fit=crop" alt="گوشی">
-                <h3>گوشی شیائومی 14 Ultra</h3>
-                <p style="color: #e53e3e; font-weight: bold;">۳۸,۰۰۰,۰۰۰ تومان</p>
-            </div>
-             <!-- کارت محصول ۴ -->
-             <div class="product-card">
-                <!-- لینک عکس گوشی ۴ -->
-                <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=300&auto=format&fit=crop" alt="گوشی">
-                <h3>گوشی پیکسل 8 پرو</h3>
-                <p style="color: #e53e3e; font-weight: bold;">۳۲,۰۰۰,۰۰۰ تومان</p>
-            </div>
+    <!-- آیکون‌های وسط صفحه (سازمانی، شعبات و...) -->
+    <section class="quick-links container">
+        <div class="link-item">
+            <div class="icon-circle"><i class="fa-solid fa-video"></i></div>
+            <span>مطبخ</span>
+        </div>
+        <div class="link-item">
+            <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+            <span>شعبات</span>
+        </div>
+        <div class="link-item">
+            <div class="icon-circle"><i class="fa-solid fa-comments"></i></div>
+            <span>قصه‌های شما</span>
+        </div>
+        <div class="link-item">
+            <div class="icon-circle"><i class="fa-solid fa-briefcase"></i></div>
+            <span>سازمانی</span>
         </div>
     </section>
+
+    <!-- کارت‌های پایین صفحه (۳ پست) -->
+    <section class="bottom-cards container">
+        
+        <!-- کارت ۱ -->
+        <div class="card">
+            <div class="card-content">
+                <h3>سفره اصیل ایرانی</h3>
+                <p>هر غذاروایتی از طعم‌های آشنا</p>
+            </div>
+            <div class="card-icon">
+                <i class="fa-solid fa-bowl-food"></i>
+            </div>
+        </div>
+
+        <!-- کارت ۲ -->
+        <div class="card">
+            <div class="card-content">
+                <h3>فضایی دلنشین</h3>
+                <p>جایی برای هم سفره شدن و کنار هم بودن</p>
+            </div>
+            <div class="card-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+        </div>
+
+        <!-- کارت ۳ -->
+        <div class="card">
+            <div class="card-content">
+                <h3>گوشه گوشه شهر</h3>
+                <p>سفره‌ای که راهش را تا شما پیدا کرده است</p>
+            </div>
+            <div class="card-icon">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+        </div>
+
+    </section>
+
 </body>
 </html>
