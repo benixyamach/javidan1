@@ -7,13 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <!-- فراخوانی فونت وزیرمتن -->
     <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <!-- فراخوانی آیکون‌ها (FontAwesome) برای زیبایی بیشتر -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- هدر سایت -->
     <header class="site-header">
         <div class="container header-inner">
             <div class="logo">
-                <img src="images/logo.png" alt="۱۹کالا">
+                <!-- لینک لوگو -->
+                <img src="https://cdn.iconscout.com/icon/free/png-256/free-19-icon-download-in-svg-png-gif-file-formats--number-nineteen-counting-pack-signs-icons-1502476.png" alt="۱۹کالا" style="width: 50px; height: 50px; filter: brightness(0) invert(1);">
             </div>
             <nav class="main-nav">
                 <ul>
@@ -26,23 +29,24 @@
             </nav>
             <div class="header-icons">
                 <!-- آیکون‌ها -->
-                <span>🛒</span>
-                <span>👤</span>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
             </div>
         </div>
     </header>
 
     <!-- بنر اصلی -->
     <section class="hero-banner container">
-        <img src="images/header-banner.jpg" alt="تخفیف پاییزه">
+        <!-- لینک بنر پاییزی -->
+        <img src="https://images.unsplash.com/photo-1507371341162-763b5e419408?q=80&w=1200&auto=format&fit=crop" alt="تخفیف پاییزه" style="height: 400px; object-fit: cover;">
     </section>
 
     <!-- نوار خدمات -->
     <section class="services container">
-        <div class="service-item">🎁 ضمانت اصالت</div>
-        <div class="service-item">🚚 ارسال اکسپرس</div>
-        <div class="service-item">📅 ۷ روز ضمانت</div>
-        <div class="service-item">🔍 رجیستری</div>
+        <div class="service-item"><i class="fa-solid fa-gift" style="color: #e53e3e; margin-left: 5px;"></i> ضمانت اصالت</div>
+        <div class="service-item"><i class="fa-solid fa-truck-fast" style="color: #3182ce; margin-left: 5px;"></i> ارسال اکسپرس</div>
+        <div class="service-item"><i class="fa-solid fa-calendar-check" style="color: #38a169; margin-left: 5px;"></i> ۷ روز ضمانت</div>
+        <div class="service-item"><i class="fa-solid fa-magnifying-glass" style="color: #d69e2e; margin-left: 5px;"></i> رجیستری</div>
     </section>
 
     <!-- مجله ۱۹کالا -->
@@ -59,15 +63,31 @@
         <div class="product-grid">
             <!-- کارت محصول ۱ -->
             <div class="product-card">
-                <img src="images/product-1.jpg" alt="گوشی">
-                <h3>نام گوشی</h3>
-                <p>قیمت</p>
+                <!-- لینک عکس گوشی ۱ -->
+                <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=300&auto=format&fit=crop" alt="گوشی">
+                <h3>گوشی سامسونگ گلکسی Z Flip</h3>
+                <p style="color: #e53e3e; font-weight: bold;">۲۵,۰۰۰,۰۰۰ تومان</p>
             </div>
             <!-- کارت محصول ۲ -->
             <div class="product-card">
-                <img src="images/product-2.jpg" alt="گوشی">
-                <h3>نام گوشی</h3>
-                <p>قیمت</p>
+                <!-- لینک عکس گوشی ۲ -->
+                <img src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=300&auto=format&fit=crop" alt="گوشی">
+                <h3>گوشی سامسونگ گلکسی S24</h3>
+                <p style="color: #e53e3e; font-weight: bold;">۴۵,۰۰۰,۰۰۰ تومان</p>
+            </div>
+            <!-- کارت محصول ۳ -->
+            <div class="product-card">
+                <!-- لینک عکس گوشی ۳ -->
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=300&auto=format&fit=crop" alt="گوشی">
+                <h3>گوشی شیائومی 14 Ultra</h3>
+                <p style="color: #e53e3e; font-weight: bold;">۳۸,۰۰۰,۰۰۰ تومان</p>
+            </div>
+             <!-- کارت محصول ۴ -->
+             <div class="product-card">
+                <!-- لینک عکس گوشی ۴ -->
+                <img src="https://images.unsplash.com/photo-1567581935884-3349723552ca?q=80&w=300&auto=format&fit=crop" alt="گوشی">
+                <h3>گوشی پیکسل 8 پرو</h3>
+                <p style="color: #e53e3e; font-weight: bold;">۳۲,۰۰۰,۰۰۰ تومان</p>
             </div>
         </div>
     </section>
