@@ -13,125 +13,99 @@
 <body>
 
     <!-- هدر بالای سایت -->
-    <header class="site-header">
-        <div class="container header-inner">
-            
-            <!-- سمت راست: لوگو -->
+    <header class="header">
+        <div class="container">
+            <!-- لوگو -->
             <div class="logo">
-                <!-- لینک لوگوی شما در گیت‌هاب -->
-                <img src="logo.jpg" alt="لوگو سفره‌خانه" class="site-logo">
+                <img src="logo.jpg" alt="لوگو سفره‌خانه">
             </div>
 
-            <!-- وسط: منوها -->
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#" class="active">صفحه نخست</a></li>
-                    <li><a href="#">شعب ما</a></li>
-                    <li><a href="#">همکاری با ما <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">منوی رستوران <i class="fa-solid fa-chevron-down"></i></a></li>
-                    <li><a href="#">درباره‌ی ما</a></li>
-                </ul>
+            <!-- منوها -->
+            <nav class="nav">
+                <a href="#" class="active">صفحه نخست</a>
+                <a href="#">شعب ما</a>
+                <a href="#">همکاری با ما <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#">منوی رستوران <i class="fa-solid fa-chevron-down"></i></a>
+                <a href="#">درباره‌ی ما</a>
             </nav>
 
-            <!-- سمت چپ: دکمه‌ها و شماره تماس -->
-            <div class="header-actions">
-                <div class="phone-box">
+            <!-- دکمه‌ها -->
+            <div class="actions">
+                <div class="phone">
                     <i class="fa-solid fa-phone"></i>
                     <span>۰۲۱-۶۸۳۳۴</span>
                 </div>
-                <button class="order-btn">
+                <button class="btn">
                     سفارش آنلاین <i class="fa-solid fa-utensils"></i>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- بنر اصلی (اسلایدر) -->
-    <section class="hero-banner container">
-        <div class="banner-wrapper">
-            <!-- فلش‌های چپ و راست -->
-            <button class="arrow-btn right"><i class="fa-solid fa-chevron-right"></i></button>
-            <button class="arrow-btn left"><i class="fa-solid fa-chevron-left"></i></button>
-            
-            <!-- لینک عکس بنر (فعلاً تستی - بعدا با banner.jpg جایگزین کن) -->
-            <img src="https://images.unsplash.com/photo-1543353071-10c8ba85a904?q=80&w=1200&auto=format&fit=crop" alt="سفره‌خانه سنتی">
-            
-            <!-- متن‌های روی بنر -->
-            <div class="banner-text top-right">
-                <h3>توتون‌خانه‌ی روحی</h3>
-                <p>منتظرتونیم</p>
-            </div>
-            <div class="banner-text bottom-left">
-                <h3>به بهونه‌ی شنیدن صداتون</h3>
-                <p>یه سفره‌ی اپونی بهت کردیم!</p>
-                <span class="date">از ۳ تا ۸ آبان</span>
-            </div>
-            <div class="banner-badge">سفارش با عشق</div>
+    <!-- بنر اصلی -->
+    <section class="container banner">
+        <img src="banner.jpg" alt="سفره‌خانه سنتی">
+        
+        <!-- متن‌های روی بنر -->
+        <div class="banner-text top-right">
+            <h3>توتون‌خانه‌ی روحی</h3>
+            <p>منتظرتونیم</p>
+        </div>
+        <div class="banner-text bottom-left">
+            <h3>به بهونه‌ی شنیدن صداتون</h3>
+            <p>یه سفره‌ی اپونی بهت کردیم!</p>
+            <span>از ۳ تا ۸ آبان</span>
         </div>
     </section>
 
-    <!-- آیکون‌های وسط صفحه -->
-    <section class="quick-links container">
+    <!-- آیکون‌های وسط -->
+    <section class="container links">
         <div class="link-item">
-            <div class="icon-circle"><i class="fa-solid fa-video"></i></div>
+            <div class="icon"><i class="fa-solid fa-video"></i></div>
             <span>مطبخ</span>
         </div>
         <div class="link-item">
-            <div class="icon-circle"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
             <span>شعبات</span>
         </div>
         <div class="link-item">
-            <div class="icon-circle"><i class="fa-solid fa-comments"></i></div>
+            <div class="icon"><i class="fa-solid fa-comments"></i></div>
             <span>قصه‌های شما</span>
         </div>
         <div class="link-item">
-            <div class="icon-circle"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="icon"><i class="fa-solid fa-briefcase"></i></div>
             <span>سازمانی</span>
         </div>
     </section>
 
-    <!-- کارت‌های پایین صفحه -->
-    <section class="bottom-cards container">
-        
-        <!-- کارت ۱ -->
+    <!-- کارت‌های پایین -->
+    <section class="container cards">
         <div class="card">
-            <!-- عکس پس زمینه کارت ۱ (فعلاً تستی) -->
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=300&auto=format&fit=crop" alt="غذای ایرانی">
-            </div>
-            <div class="card-content">
+            <img src="food1.jpg" alt="غذای ایرانی">
+            <div class="card-text">
                 <h3>سفره اصیل ایرانی</h3>
                 <p>هر غذاروایتی از طعم‌های آشنا</p>
             </div>
             <div class="card-icon"><i class="fa-solid fa-bowl-food"></i></div>
         </div>
 
-        <!-- کارت ۲ -->
         <div class="card">
-            <!-- عکس پس زمینه کارت ۲ (فعلاً تستی) -->
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=300&auto=format&fit=crop" alt="فضای رستوران">
-            </div>
-            <div class="card-content">
+            <img src="food2.jpg" alt="فضای رستوران">
+            <div class="card-text">
                 <h3>فضایی دلنشین</h3>
                 <p>جایی برای هم سفره شدن و کنار هم بودن</p>
             </div>
             <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
         </div>
 
-        <!-- کارت ۳ -->
         <div class="card">
-            <!-- عکس پس زمینه کارت ۳ (فعلاً تستی) -->
-            <div class="card-img-wrapper">
-                <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?q=80&w=300&auto=format&fit=crop" alt="شعبات">
-            </div>
-            <div class="card-content">
+            <img src="food3.jpg" alt="شعبات">
+            <div class="card-text">
                 <h3>گوشه گوشه شهر</h3>
                 <p>سفره‌ای که راهش را تا شما پیدا کرده است</p>
             </div>
             <div class="card-icon"><i class="fa-solid fa-location-dot"></i></div>
         </div>
-
     </section>
 
 </body>
